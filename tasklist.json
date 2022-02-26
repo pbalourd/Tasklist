@@ -1,0 +1,14 @@
+[
+    {
+        "priority": "N",
+        "date": "2022-01-21",
+        "time": "12:00",
+        "task": "Pay bills"
+    },
+    {
+        "priority": "L",
+        "date": "2022-01-12",
+        "time": "20:00",
+        "task": "Buy new book"
+    }
+]

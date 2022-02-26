@@ -1,0 +1,6 @@
+type: edu
+files:
+- name: src/tasklist/Main.kt
+  visible: true
+- name: test/TasklistTest.kt
+  visible: false

@@ -1,0 +1,8 @@
+type: edu
+files:
+- name: test/TasklistTest.kt
+  visible: false
+- name: src/tasklist/Main.kt
+  visible: true
+- name: tasklist.json
+  visible: true
