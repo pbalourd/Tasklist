@@ -323,7 +323,7 @@ class TasklistTest : StageTest<Any>() {
                     "Your output should contain \"+----+------------+-------+---+---+--------------------------------------------+\"")
 
         if (!co.inputNext("Input the task number (1-1):"))
-            return CheckResult(false, "Your output should contain \"Input the task number (1-2):\"")
+            return CheckResult(false, "Your output should contain \"Input the task number (1-1):\"")
 
         if (!co.input("1", "The task is deleted"))
             return CheckResult(false, "Your output should contain \"The task is deleted\"")
@@ -381,7 +381,7 @@ class TasklistTest : StageTest<Any>() {
         if (!co.inputNext("Input the task number (1-1):"))
             return CheckResult(false, "Your output should contain \"Input the task number (1-1):\"")
         if (!co.input("1", "Input a field to edit (priority, date, time, task):"))
-            return CheckResult(false, "Your output should contain \"The task is deleted\nInput a field to edit (priority, date, time, task):\"")
+            return CheckResult(false, "Your output should contain \"Input a field to edit (priority, date, time, task):\"")
 
         if (!co.input("priority", "Input the task priority (C, H, N, L):"))
             return CheckResult(false, "Your output should contain \"Input the task priority (C, H, N, L):\"")
@@ -404,7 +404,7 @@ class TasklistTest : StageTest<Any>() {
         if (!co.inputNext("Input the task number (1-1):"))
             return CheckResult(false, "Your output should contain \"Input the task number (1-1):\"")
         if (!co.input("1", "Input a field to edit (priority, date, time, task):"))
-            return CheckResult(false, "Your output should contain \"The task is deleted\nInput a field to edit (priority, date, time, task):\"")
+            return CheckResult(false, "Your output should contain \"Input a field to edit (priority, date, time, task):\"")
 
 
         if (!co.input("date", "Input the date (yyyy-mm-dd):"))
@@ -428,7 +428,7 @@ class TasklistTest : StageTest<Any>() {
         if (!co.inputNext("Input the task number (1-1):"))
             return CheckResult(false, "Your output should contain \"Input the task number (1-1):\"")
         if (!co.input("1", "Input a field to edit (priority, date, time, task):"))
-            return CheckResult(false, "Your output should contain \"The task is deleted\nInput a field to edit (priority, date, time, task):\"")
+            return CheckResult(false, "Your output should contain \"Input a field to edit (priority, date, time, task):\"")
 
         if (!co.input("time", "Input the time (hh:mm):"))
             return CheckResult(false, "Your output should contain \"Input the date (yyyy-mm-dd):\"")
@@ -451,10 +451,10 @@ class TasklistTest : StageTest<Any>() {
         if (!co.inputNext("Input the task number (1-1):"))
             return CheckResult(false, "Your output should contain \"Input the task number (1-1):\"")
         if (!co.input("1", "Input a field to edit (priority, date, time, task):"))
-            return CheckResult(false, "Your output should contain \"The task is deleted\nInput a field to edit (priority, date, time, task):\"")
+            return CheckResult(false, "Your output should contain \"Input a field to edit (priority, date, time, task):\"")
 
         if (!co.input("task", "Input a new task (enter a blank line to end):"))
-            return CheckResult(false, "Your output should contain \"Input the date (yyyy-mm-dd):\"")
+            return CheckResult(false, "Your output should contain \"Input a new task (enter a blank line to end):\"")
         if (!co.input("My new task\n\n", "The task is changed"))
             return CheckResult(false, "Your output should contain \"The task is changed\"")
         if (!co.inputNext("Input an action (add, print, edit, delete, end):"))
@@ -482,7 +482,7 @@ class TasklistTest : StageTest<Any>() {
         return CheckResult.correct()
     }
 
-    // Ling lines
+    // Long lines
     @DynamicTest(order = 10)
     fun tasklistTest27(): CheckResult {
         val now = Clock.System.now()

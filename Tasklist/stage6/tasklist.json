@@ -1,25 +1,25 @@
 [
     {
         "priority": "C",
-        "date": "2022-02-26",
+        "date": "2022-04-02",
         "time": "17:00",
         "task": "See my dentist"
     },
     {
         "priority": "H",
-        "date": "2022-03-05",
+        "date": "2022-04-09",
         "time": "17:00",
         "task": "Cinema: get tickets\nCheck movie reviews"
     },
     {
         "priority": "N",
-        "date": "2022-02-19",
+        "date": "2022-03-26",
         "time": "19:00",
         "task": "Supermarket\nChocolates\nflour\noranges"
     },
     {
         "priority": "L",
-        "date": "2022-03-05",
+        "date": "2022-04-09",
         "time": "12:00",
         "task": "Buy book"
     }
